@@ -5,7 +5,7 @@
 
 Name:           oldjdom
 Version:        1.0
-Release:        %mkrel 0.%{beta}.2.5
+Release:        %mkrel 0.%{beta}.2.6
 Epoch:          0
 Summary:        Java alternative to DOM and SAX
 License:        Apache License-like
@@ -19,8 +19,6 @@ BuildRequires:  jpackage-utils >= 0:1.5
 BuildRequires:  ant
 BuildRequires:  xalan-j2 >= 0:2.2.0
 %if %{gcj_support}
-Requires(post): java-gcj-compat
-Requires(postun): java-gcj-compat
 BuildRequires:  java-gcj-compat-devel
 %else
 Buildarch:      noarch
