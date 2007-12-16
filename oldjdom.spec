@@ -5,7 +5,7 @@
 
 Name:           oldjdom
 Version:        1.0
-Release:        %mkrel 0.%{beta}.2.6
+Release:        %mkrel 0.%{beta}.2.7
 Epoch:          0
 Summary:        Java alternative to DOM and SAX
 License:        Apache License-like
@@ -15,7 +15,7 @@ Group:          Development/Java
 #Distribution:   JPackage
 Source0:        http://www.jdom.org/dist/source/jdom-b8.tar.bz2
 Requires:       xalan-j2 >= 0:2.2.0
-BuildRequires:  jpackage-utils >= 0:1.5
+BuildRequires:  java-rpmbuild >= 0:1.5
 BuildRequires:  ant
 BuildRequires:  xalan-j2 >= 0:2.2.0
 %if %{gcj_support}
