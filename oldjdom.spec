@@ -5,7 +5,7 @@
 
 Name:           oldjdom
 Version:        1.0
-Release:        %mkrel 0.%{beta}.2.8
+Release:        %mkrel 0.%{beta}.2.9
 Epoch:          0
 Summary:        Java alternative to DOM and SAX
 License:        Apache License-like
