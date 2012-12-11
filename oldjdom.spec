@@ -5,7 +5,7 @@
 
 Name:           oldjdom
 Version:        1.0
-Release:        %mkrel 0.%{beta}.2.9
+Release:        %mkrel 0.%{beta}.2.8
 Epoch:          0
 Summary:        Java alternative to DOM and SAX
 License:        Apache License-like
@@ -106,4 +106,47 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(0644,root,root,0755)
 %{_datadir}/%{name}
 
+
+
+
+%changelog
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0:1.0-0.b8.2.8mdv2010.0
++ Revision: 426267
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0:1.0-0.b8.2.7mdv2009.0
++ Revision: 136634
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Dec 16 2007 Anssi Hannula <anssi@mandriva.org> 0:1.0-0.b8.2.7mdv2008.1
++ Revision: 120999
+- buildrequire java-rpmbuild, i.e. build with icedtea on x86(_64)
+
+* Sat Sep 15 2007 Anssi Hannula <anssi@mandriva.org> 0:1.0-0.b8.2.6mdv2008.0
++ Revision: 87273
+- rebuild to filter out autorequires of GCJ AOT objects
+- remove unnecessary Requires(post) on java-gcj-compat
+
+* Sun Sep 09 2007 Pascal Terjan <pterjan@mandriva.org> 0:1.0-0.b8.2.5mdv2008.0
++ Revision: 82876
+- rebuild
+
+
+* Fri Mar 16 2007 Christiaan Welvaart <spturtle@mandriva.org> 1.0-0.b8.2.4mdv2007.1
++ Revision: 144745
+- rebuild for 2007.1
+- Import oldjdom
+
+* Sun Jun 04 2006 David Walluck <walluck@mandriva.org> 0:1.0-0.b8.2.2mdv2007.0
+- rebuild for libgcj.so.7
+- aot-compile
+
+* Sat May 28 2005 David Walluck <walluck@mandriva.org> 0:1.0-0.b8.2.1mdk
+- release
+
+* Wed Aug 25 2004 Fernando Nasser <fnasser@redhat.com> 0:1.0-0.b8.2jpp
+- Rebuild with Ant 1.6.2
 
