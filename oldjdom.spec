@@ -9,7 +9,7 @@ Release:        %mkrel 0.%{beta}.2.8
 Epoch:          0
 Summary:        Java alternative to DOM and SAX
 License:        Apache License-like
-URL:            http://www.jdom.org/
+URL:            https://www.jdom.org/
 Group:          Development/Java
 #Vendor:         JPackage Project
 #Distribution:   JPackage
